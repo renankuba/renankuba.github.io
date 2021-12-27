@@ -1,0 +1,26 @@
+.icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.ic-strava {
+    background-image: url(social/strava.svg);
+}
+.ic-twitter {
+    background-image: url(social/twitter.svg);
+}
+.ic-instagram {
+    background-image: url(social/instagram.svg);
+}
+.ic-github {
+    background-image: url(social/github.svg);
+}
+.ic-linkedin {
+    background-image: url(social/linkedin.svg);
+}
+
+.ic-white {
+    filter: invert(1);
+}

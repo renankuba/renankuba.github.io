@@ -8,15 +8,31 @@
         <meta name="author" content="Renan Kuba ">
         <link rel="icon" href="/favicon.ico" type="image/svg+xml">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="icons.css">
     </head>
     <body>
         <header>
+            <picture>
+                <source srcset="avatar-x-small.png" media="(max-width: 319px)">
+                <source srcset="avatar-small.png" media="(min-width: 320px) and (max-height:731px)">
+                <source srcset="avatar.png" media="(min-width: 375px) and (min-height:732px)">
+                <img src="" alt="avatar">
+            </picture>
             <h1>Hello There!</h1>
             <h2>I am Renan Kuba</h2>
-            <p>An experienced Software Engineer, currently based in Lisbon, who value a well-written and structured code as well as a good final product.</p>
-            <p>Here I want to share my professional journey, passions, and interests.</p>
+            <h3>- Software Engineer -</h3>
         </header>
         <main>
+            <article>
+                <h2>A Brief Summary</h2>
+                <p>An experienced Software Engineer, currently based in Lisbon, who value a well-written and structured code as well as a good final product.</p>
+                <p>Here I want to share my professional journey, passions, and interests.</p>
+            </article>
             <article>
                 <h2>Professional Experiences</h2>
                 <section>
@@ -80,9 +96,18 @@
                 </section>
                 <section>
                     <h3>Video Games</h3>
-                    <p>In my spare time, I like playing some good video games. With that, I can either enjoy ¿an excellent story and mechanics or just spend some pleasant time with friends playing together.</p>
+                    <p>In my spare time, I like playing some good video games. With that, I can either enjoy an excellent story and mechanics or just spend some pleasant time with friends playing together.</p>
                 </section>
             </article>
         </main>
+        <footer>
+                <ul>
+                    <li><a href="https://github.com/renankuba"><span class="icon ic-github ic-white"></span></a></li>
+                    <li><a href="https://twitter.com/kubarnn"><span class="icon ic-twitter ic-white"></span></a></li>
+                    <li><a href="https://instagram.com/renankuba"><span class="icon ic-instagram ic-white"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/renankuba/"><span class="icon ic-linkedin ic-white"></span></a></li>
+                    <li><a href="https://www.strava.com/athletes/27451787"><span class="icon ic-strava ic-white"></span></a></li>
+                </ul>
+        </footer>
     </body>
 </html>
