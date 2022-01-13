@@ -6,19 +6,19 @@
 }
 
 .ic-strava {
-    background-image: url(social/strava.svg);
+    background-image: url(../images/social/strava.svg);
 }
 .ic-twitter {
-    background-image: url(social/twitter.svg);
+    background-image: url(../images/social/twitter.svg);
 }
 .ic-instagram {
-    background-image: url(social/instagram.svg);
+    background-image: url(../images/social/instagram.svg);
 }
 .ic-github {
-    background-image: url(social/github.svg);
+    background-image: url(../images/social/github.svg);
 }
 .ic-linkedin {
-    background-image: url(social/linkedin.svg);
+    background-image: url(../images/social/linkedin.svg);
 }
 
 .ic-white {
