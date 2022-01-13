@@ -5,15 +5,19 @@ body {
 header {
     background-color: #18191a;
     color: #e4e6eb;
-    height: 35em;
     min-width: 220px;
-    min-height: 485px;
     text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
 }
 
 h1 {
     font-family: 'Roboto Black', sans-serif;
-    font-size: 50px;
+    font-size: 75px;
     margin: 15px 0;
 }
 
@@ -24,11 +28,11 @@ h3 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
 }
 main {
     padding: 15px;
@@ -43,7 +47,6 @@ main > article:not(:last-child){
 
 footer {
     background-color: #18191a;
-    height: 3em;
     text-align: center;
     padding: 2em 0;
 }
