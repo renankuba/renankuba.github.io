@@ -1,26 +1,32 @@
 .icon {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-size: cover;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
 }
 
 .ic-strava {
-    background-image: url(../images/social/strava.svg);
+  background-image: url(../images/social/strava.svg);
 }
+
 .ic-twitter {
-    background-image: url(../images/social/twitter.svg);
+  background-image: url(../images/social/twitter.svg);
 }
+
 .ic-instagram {
-    background-image: url(../images/social/instagram.svg);
+  background-image: url(../images/social/instagram.svg);
 }
+
 .ic-github {
-    background-image: url(../images/social/github.svg);
+  background-image: url(../images/social/github.svg);
 }
+
 .ic-linkedin {
-    background-image: url(../images/social/linkedin.svg);
+  background-image: url(../images/social/linkedin.svg);
 }
 
 .ic-white {
-    filter: invert(1);
+  filter: invert(1);
 }
+
+/*# sourceMappingURL=icons.css.map */

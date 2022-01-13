@@ -1,84 +1,79 @@
 body {
-    font-family: 'Roboto Light', sans-serif;
-    min-height: 100vh;
-    display:flex;
-    flex-direction:column;
-    background-color: #293241;
+  font-family: "Roboto Light", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #293241;
 }
 
 footer,
 header {
-    background-color: #3D5A80;
-    color: #f2f8f8;
+  background-color: #3D5A80;
+  color: #f2f8f8;
 }
 
 header {
-    border-bottom-left-radius:50px;
+  border-bottom-left-radius: 50px;
 }
-
 header > div {
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-
 header > div > div > h2 {
-    font-size: 50px;
+  font-size: 50px;
 }
-
 header > div > div > h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h1 {
-    font-family: 'Roboto Black', sans-serif;
-    font-size: 75px;
-    margin: 0.25em 0;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 75px;
+  margin: 0.25em 0;
 }
 
 h2,
 h3 {
-    font-family: 'Roboto', sans-serif;
-    margin: 0.25em 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0.25em 0;
 }
 
-main{
-    padding: 0.75em 0;
+main {
+  padding: 0.75em 0;
 }
 
 article {
-    margin: 0.75em;
-    padding: 0.75em;
-    background-color: #98C1D9;
-    border-radius: 5px;
+  margin: 0.75em;
+  padding: 0.75em;
+  background-color: #98C1D9;
+  border-radius: 5px;
 }
-
 article > h2 {
-    font-size: 20px;
-    margin: 0.25em 0;
-    padding: 0.25em;
-    background-color: #EE6C4D;
-    color: #f2f8f8;
-    border-radius: 5px;
+  font-size: 20px;
+  margin: 0.25em 0;
+  padding: 0.25em;
+  background-color: #EE6C4D;
+  color: #f2f8f8;
+  border-radius: 5px;
 }
-
 article > section:not(:last-child) {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 footer {
-    margin-top:auto;
-    text-align: center;
-    padding: 2em 0;
+  margin-top: auto;
+  text-align: center;
+  padding: 2em 0;
 }
-
 footer ul {
-    display: inline;
+  display: inline;
+}
+footer ul li {
+  display: inline;
 }
 
-footer ul li {
-    display: inline;
-}
+/*# sourceMappingURL=style.css.map */
