@@ -46,13 +46,16 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Roboto', sans-serif;
     margin: 0.25em 0;
 }
 
 main {
     padding: 0.75em 0;
+    max-width: 75em;
+    margin: auto;
 }
 
 article {
@@ -62,7 +65,7 @@ article {
     border-radius: 5px;
 
     & > h2 {
-        font-size: 20px;
+        font-size: 30px;
         padding: 0.25em;
         background-color: $highlight-color;
         color: $bright-title-color;
@@ -73,9 +76,49 @@ article {
 section {
     padding: 0 0.75em;
     margin-top: 1em;
+    & > h3 {
+        font-size: 25px;
+    }
+
+    & > h4 {
+        font-size: 20px;
+    }
 }
 
-li:not(:last-child) > section {
+article.timeline > ul > li {
+    margin-left: 1.5em;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: $section-color;
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        border: 3px solid $base-color;
+        z-index: 2;
+    }
+
+    &:not(:last-child):after {
+        content: "";
+        width: 3px;
+        height: calc(100% + 30px);
+        position: absolute;
+        top: 8px;
+        left: 9px;
+        background: $base-color;
+        transition: transform 0.4s ease 0s;
+        transform-origin: center top;
+        z-index: 1;
+    }
+
+    & > section {
+        margin-left: 1.5em;
+    }
+}
+
+article:not(.timeline) > ul > li:not(:last-child) > section {
     border-bottom: 0.01em solid $background-color;
 }
 

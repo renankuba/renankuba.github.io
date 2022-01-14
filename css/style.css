@@ -37,13 +37,16 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Roboto", sans-serif;
   margin: 0.25em 0;
 }
 
 main {
   padding: 0.75em 0;
+  max-width: 75em;
+  margin: auto;
 }
 
 article {
@@ -53,7 +56,7 @@ article {
   border-radius: 5px;
 }
 article > h2 {
-  font-size: 20px;
+  font-size: 30px;
   padding: 0.25em;
   background-color: #FDB137;
   color: #f2f8f8;
@@ -64,8 +67,44 @@ section {
   padding: 0 0.75em;
   margin-top: 1em;
 }
+section > h3 {
+  font-size: 25px;
+}
+section > h4 {
+  font-size: 20px;
+}
 
-li:not(:last-child) > section {
+article.timeline > ul > li {
+  margin-left: 1.5em;
+  position: relative;
+}
+article.timeline > ul > li:before {
+  content: "";
+  background: #F9F8F3;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 3px solid #4A686A;
+  z-index: 2;
+}
+article.timeline > ul > li:not(:last-child):after {
+  content: "";
+  width: 3px;
+  height: calc(100% + 30px);
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  background: #4A686A;
+  transition: transform 0.4s ease 0s;
+  transform-origin: center top;
+  z-index: 1;
+}
+article.timeline > ul > li > section {
+  margin-left: 1.5em;
+}
+
+article:not(.timeline) > ul > li:not(:last-child) > section {
   border-bottom: 0.01em solid #C1D1D1;
 }
 
