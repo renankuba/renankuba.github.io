@@ -1,15 +1,21 @@
+$base-color: #3D5A80;
+$highlight-color: #EE6C4D;
+$bright-title-color: #f2f8f8;
+$background-color: #293241;
+$section-color: #98C1D9;
+
 body {
     font-family: 'Roboto Light', sans-serif;
     min-height: 100vh;
     display:flex;
     flex-direction:column;
-    background-color: #293241;
+    background-color: $background-color;
 }
 
 footer,
 header {
-    background-color: #3D5A80;
-    color: #f2f8f8;
+    background-color: $base-color;
+    color: $bright-title-color;
 }
 
 header {
@@ -45,27 +51,39 @@ h3 {
     margin: 0.25em 0;
 }
 
-main{
+main {
     padding: 0.75em 0;
 }
 
 article {
     margin: 0.75em;
     padding: 0.75em;
-    background-color: #98C1D9;
+    background-color: $section-color;
     border-radius: 5px;
 
     & > h2 {
         font-size: 20px;
-        margin: 0.25em 0;
         padding: 0.25em;
-        background-color: #EE6C4D;
-        color: #f2f8f8;
+        background-color: $highlight-color;
+        color: $bright-title-color;
         border-radius: 5px;
     }
 
-    & > section:not(:last-child) {
-        margin-bottom: 1em;
+    & > section {
+        padding: 0 0.75em;
+        margin-top: 1em;
+    }
+
+    & > section:not(:last-child){
+        border-bottom: 0.01em solid $background-color;
+    }
+}
+
+article,
+section {
+    & > div,
+    & > p {
+        margin: 0.75em 0;
     }
 }
 
